@@ -1,0 +1,19 @@
+.sendTransactionWrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sendTransactionForm {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 600px;
+  gap: 10px;
+}
+
+.input {
+  background-color: red;
+}

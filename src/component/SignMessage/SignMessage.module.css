@@ -1,0 +1,38 @@
+.signMessageWrapper {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.formSignMessage {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.textarea {
+  width: 400px;
+  height: 200px;
+}
+
+.buttonSubmit {
+  background-color: lightsteelblue;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.textError {
+  max-width: 400px;
+  text-overflow: clip;
+  height: auto;
+}
