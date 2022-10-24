@@ -1,5 +1,6 @@
 import './App.css';
-import Profile from './component/Profile/Profile';
+import Profile from './component/profile/Profile';
+import 'antd/dist/antd.css'; // o
 
 function App() {
   return (

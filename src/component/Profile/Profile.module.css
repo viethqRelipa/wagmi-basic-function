@@ -5,6 +5,7 @@
   padding: 10px 20px;
   border-radius: 5px;
   margin-top: 10px;
+  margin-right: 10px;
 }
 
 .buttonDisconnect {
@@ -18,4 +19,9 @@
 
 .accountInfo {
   font-size: 16px;
+}
+
+.tabsWrapper {
+  width: 90vw;
+  margin: 0 auto;
 }
