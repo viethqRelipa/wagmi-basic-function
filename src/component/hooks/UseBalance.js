@@ -6,22 +6,32 @@ import styles from "./Hooks.module.css";
 const UseBalance = () => {
   const { address, isConnected } = useAccount();
   // trà vể số dư tài khoản hiện tại
-  const { data, isError, isLoading } = useBalance({
-    addressOrName: "0xA0Cf798816D4b9b9866b5330EEa46a18382f251e",
-    token: "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984"
-  });
+  const { data: balance, isLoading } = useBalance({
+    addressOrName: address,
+    onSuccess(data) {
+      console.log("success:", data)
+    },
+    onError(error) {
+      console.log("error:",error)
+    },
+    onSettled(data, error) {
+      console.log("settled:", data, error)
+    }
+  })
+
+  console.log("balance:", balance, isLoading)
 
   const renderBalance = () => {
-    if (isError) return <div>Error fetching balance</div>
     return (
       <div>
-        {isLoading ? <Spin /> : (
-          <div>
+        {/* {isLoading ? <Spin /> : ( */}
+          {/* <div>
             Balance: {data?.formatted} {data?.symbol}
             <br />
             Address: {address}
-          </div>
-        )}
+          </div> */}
+        {/* )} */}
+        hello
       </div>
     )
   }
